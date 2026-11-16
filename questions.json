@@ -1,0 +1,2602 @@
+{
+ "version": 1,
+ "updated": "2026-11-15",
+ "howToEdit": "Each question: q = question, a = right answer, w = two wrong answers, means/example/why/trick = teaching text, whyNot = one line per wrong answer (same order as w), src = where the fact comes from, mem = true if it's pure memorization, verify = note if Nika should confirm. Keep answers under about 22 characters so they fit on the road.",
+ "categories": [
+  {
+   "id": "a71",
+   "name": "A71000 & B2000"
+  },
+  {
+   "id": "kids",
+   "name": "Kids: rider vs Head Start"
+  },
+  {
+   "id": "wl",
+   "name": "Whole life, LPU65 & seniors"
+  },
+  {
+   "id": "term",
+   "name": "Term"
+  },
+  {
+   "id": "adb",
+   "name": "ADB rider"
+  },
+  {
+   "id": "riders",
+   "name": "Riders"
+  },
+  {
+   "id": "cancer",
+   "name": "Cancer plans"
+  },
+  {
+   "id": "nocost",
+   "name": "No-cost benefits"
+  },
+  {
+   "id": "nj",
+   "name": "NJ rules"
+  },
+  {
+   "id": "money",
+   "name": "Money math"
+  },
+  {
+   "id": "fit",
+   "name": "Which plan fits?"
+  },
+  {
+   "id": "peter",
+   "name": "Peter Roberts craft"
+  }
+ ],
+ "verifyWithNika": [
+  {
+   "topic": "LPU65 issue ages",
+   "note": "Niko's example asked 'LPU65 can be sold until what age?' The materials don't give LPU65 issue ages. Get the real range from Nika or the rate sheet, then add the question."
+  },
+  {
+   "topic": "Child rider end age",
+   "note": "Training page says coverage lasts until 18. The 2.1 review quiz said 21. Not quizzed until Nika confirms."
+  },
+  {
+   "topic": "A71000 'doubled' handout",
+   "note": "A handout shows hospital $1,200/day, ICU $2,400/day, ER $600, AD&D $120k adult / $24k child. Official training says $100-$500 levels. Game uses the official training numbers."
+  },
+  {
+   "topic": "Recoupment Rider amount",
+   "note": "Training says $400/month for 6 months. Does it scale with the A71000 level?"
+  },
+  {
+   "topic": "Senior issue age",
+   "note": "Max issue age for seniors (80.5 heard, not confirmed)."
+  },
+  {
+   "topic": "AIL Plus discount range",
+   "note": "Training 2.1 says 10% to 85%. Training 1.2 says up to 80%. Not quizzed."
+  },
+  {
+   "topic": "Head Start grandparent cap",
+   "note": "Efe said grandparents can only add $25k. Training only says over $25k total needs the Child Coverage Questionnaire."
+  },
+  {
+   "topic": "Whole life bracket thresholds",
+   "note": "Week 1 material. Add questions once Niko has the real WL/PR/EX/SL thresholds."
+  },
+  {
+   "topic": "Waivers",
+   "note": "Waiver of premium cost (~$3-4?), layoff vs strike waivers, who qualifies."
+  },
+  {
+   "topic": "A71 on every policy / ALP to AP",
+   "note": "Late Dec 2026 change. How AP counts the A71000."
+  },
+  {
+   "topic": "Freedom of Choice amounts",
+   "note": "Mentor notes: $15k starter, $25-30k with inflation. Not quizzed until confirmed."
+  }
+ ],
+ "questions": [
+  {
+   "id": "a71-er",
+   "cat": "a71",
+   "q": "Client on the $300 A71000 level sprains an ankle and goes to the ER. What does the plan pay?",
+   "a": "$150",
+   "w": [
+    "$300",
+    "$600"
+   ],
+   "means": "The A71000 pays ER and outpatient care at half the plan level, per injury.",
+   "example": "Think of a gym day pass at half price: same gym, half the number. $300 level, half is $150.",
+   "why": "Half of $300 is $150, paid in cash to the client for that injury.",
+   "whyNot": [
+    "$300 is the full level. That's what one hospital day pays, not an ER visit.",
+    "$600 is double the level. That's an ICU day in the first 14 days."
+   ],
+   "trick": "ER = Easy Rate = half.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-hosp",
+   "cat": "a71",
+   "q": "Client on the $400 level is admitted to the hospital (not ICU) for 3 days after a car accident. Total paid?",
+   "a": "$1,200",
+   "w": [
+    "$600",
+    "$2,400"
+   ],
+   "means": "A hospital stay pays the full plan level for every day, up to 365 days.",
+   "example": "Like rent by the night: $400 a night, 3 nights, $1,200.",
+   "why": "$400 times 3 days is $1,200.",
+   "whyNot": [
+    "$600 uses the ER rule (half the level) times 3. Hospital days pay the full level.",
+    "$2,400 doubles it. Double only applies to ICU days, and only the first 14."
+   ],
+   "trick": "Hospital = Hotel rate: full level per night.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-icu20",
+   "cat": "a71",
+   "q": "$500 level. After a bad fall the client spends 20 days in the ICU. Total ICU benefit?",
+   "a": "$17,000",
+   "w": [
+    "$20,000",
+    "$10,000"
+   ],
+   "means": "ICU pays double the level per day for the first 14 days, then the full level per day after that.",
+   "example": "Like a phone plan with 14 days of double data, then normal data.",
+   "why": "14 days at $1,000 is $14,000. 6 more days at $500 is $3,000. Total $17,000.",
+   "whyNot": [
+    "$20,000 pays double for all 20 days. The double rate stops after day 14.",
+    "$10,000 pays the normal level all 20 days and forgets the double first 14."
+   ],
+   "trick": "ICU: 14 doubled, then back to normal.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-icu14",
+   "cat": "a71",
+   "q": "How many ICU days does the A71000 pay at DOUBLE the plan level?",
+   "a": "14 days",
+   "w": [
+    "10 days",
+    "30 days"
+   ],
+   "means": "The double ICU rate covers the first 14 days of an ICU stay.",
+   "example": "Two weeks of double pay, like overtime that only lasts two weeks.",
+   "why": "Training: double the level per day for the first 14 days, then the full level.",
+   "whyNot": [
+    "10 days is the wrong answer on the official 2.2 review quiz. It's 14.",
+    "30 days is a month. The double window is two weeks."
+   ],
+   "trick": "Two weeks double: 14.",
+   "src": "Week 0 training 2.2 · Deep Dive A71000",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "a71-351",
+   "cat": "a71",
+   "q": "After the 14 doubled ICU days, the A71000 keeps paying the full level for up to how many MORE days?",
+   "a": "351 days",
+   "w": [
+    "365 days",
+    "186 days"
+   ],
+   "means": "After day 14 the ICU benefit drops to the full level for up to another 351 days.",
+   "example": "14 plus 351 is 365, one full year, like a yearly gym membership.",
+   "why": "14 + 351 = 365. The total ICU window is one year.",
+   "whyNot": [
+    "365 is the total year. After 14 days are used, 351 are left.",
+    "186 is half a year plus change. Not a number in the plan."
+   ],
+   "trick": "14 + 351 = 365. The year is the whole ride.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "a71-hospmax",
+   "cat": "a71",
+   "q": "What's the most hospital days (non-ICU) the A71000 pays for one stay?",
+   "a": "365 days",
+   "w": [
+    "180 days",
+    "90 days"
+   ],
+   "means": "Hospital stays pay the full plan level per day for up to 365 days.",
+   "example": "A full year of daily pay, like a 365-day streak in a game.",
+   "why": "Training: full plan level per day, up to 365 days.",
+   "whyNot": [
+    "180 days is half a year. The plan pays up to a full year.",
+    "90 days is a common limit at other carriers, not the A71000."
+   ],
+   "trick": "Hospital: one whole year.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "a71-b2k-auto",
+   "cat": "a71",
+   "q": "B2000 on a $300 A71000. The client dies in a car crash. What does the B2000 pay?",
+   "a": "$60,000",
+   "w": [
+    "$30,000",
+    "$150,000"
+   ],
+   "means": "The B2000 is the accidental death benefit built into every A71000. Base = level x 100. Auto = 2x base. Common carrier = 5x base.",
+   "example": "$300 plus two zeros is $30,000. Car crash doubles it to $60,000.",
+   "why": "$300 x 100 = $30,000 base. Auto-related doubles it: $60,000.",
+   "whyNot": [
+    "$30,000 is the base. That's for a non-auto accident, like falling off a ladder.",
+    "$150,000 is 5x the base. That's a common carrier death, like a bus, train or plane."
+   ],
+   "trick": "Add two zeros, then: Car = 2, Carrier = 5.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-b2k-bus",
+   "cat": "a71",
+   "q": "B2000 on a $200 A71000. The client dies as a passenger in a commercial bus crash. Payout?",
+   "a": "$100,000",
+   "w": [
+    "$40,000",
+    "$20,000"
+   ],
+   "means": "A commercial bus, train or plane is a common carrier. The B2000 pays 5x the base for it.",
+   "example": "$200 plus two zeros is $20,000. Bus = common carrier = x5 = $100,000.",
+   "why": "$20,000 base x 5 = $100,000.",
+   "whyNot": [
+    "$40,000 is the auto rate (2x). A commercial bus is a common carrier, which pays 5x.",
+    "$20,000 is the base, for a non-auto accident."
+   ],
+   "trick": "Bus, train, plane = public ride = 5x.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-b2k-base",
+   "cat": "a71",
+   "q": "B2000 on a $500 A71000. The client falls off a ladder at home and dies. Payout?",
+   "a": "$50,000",
+   "w": [
+    "$100,000",
+    "$250,000"
+   ],
+   "means": "A non-auto, non-common-carrier accident pays the B2000 base: plan level x 100.",
+   "example": "$500 plus two zeros is $50,000.",
+   "why": "A ladder fall is a regular accidental death, so it pays the base: $50,000.",
+   "whyNot": [
+    "$100,000 is the auto-related amount (2x).",
+    "$250,000 is the common carrier amount (5x)."
+   ],
+   "trick": "No car, no carrier: just add two zeros.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-recoup",
+   "cat": "a71",
+   "q": "Hospital Recoupment Rider: the most it pays after one hospital stay?",
+   "a": "$2,400",
+   "w": [
+    "$1,200",
+    "$4,800"
+   ],
+   "means": "The Recoupment Rider pays $400 a month after a hospital stay, for up to 6 months, to help during recovery.",
+   "example": "Like a $400 car payment covered for 6 months while you heal.",
+   "why": "$400 x 6 months = $2,400.",
+   "whyNot": [
+    "$1,200 is only 3 months.",
+    "$4,800 is 12 months. The rider stops at 6."
+   ],
+   "trick": "400 for 6 months: 2,400.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": "Training gives $400/month. Ask Nika if that amount changes with the plan level."
+  },
+  {
+   "id": "a71-flu",
+   "cat": "a71",
+   "q": "Client gets a bad respiratory infection and goes to urgent care. What does the A71000 pay?",
+   "a": "Nothing",
+   "w": [
+    "Half the level",
+    "A reimbursement"
+   ],
+   "means": "The A71000 is accident-only. Sickness isn't covered at all.",
+   "example": "Car insurance pays for a crash, not for your engine wearing out. A71000 pays for getting hurt, not getting sick.",
+   "why": "No accident, no benefit. An infection is an illness.",
+   "whyNot": [
+    "Half the level is the ER rule, but only for an accidental injury.",
+    "The A71000 never reimburses bills. It pays set cash amounts, and only for accidents."
+   ],
+   "trick": "Get HURT, get paid. Get sick, no.",
+   "src": "Week 0 training 2.2 · Deep Dive A71000",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-family",
+   "cat": "a71",
+   "q": "A mom wants the A71000 for herself, her husband and their 2 kids. What's true?",
+   "a": "One family plan works",
+   "w": [
+    "Each needs own plan",
+    "Kids can't be covered"
+   ],
+   "means": "The A71000 comes as an individual plan or a family plan.",
+   "example": "Like a family phone plan: one plan, everybody on it.",
+   "why": "Training: available as either an individual or family plan.",
+   "whyNot": [
+    "False. That's the trick statement on the official 2.2 review quiz.",
+    "Kids can be on the family plan."
+   ],
+   "trick": "A71 = family phone plan.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-pays",
+   "cat": "a71",
+   "q": "When the A71000 pays out, who gets the money?",
+   "a": "The client, in cash",
+   "w": [
+    "The hospital",
+    "Reimburses bills"
+   ],
+   "means": "It's an indemnity plan: a set amount per event, paid to the client to spend however they want.",
+   "example": "Like a gift card that works anywhere: rent, groceries, the electric bill.",
+   "why": "Training: pays the client directly, not a reimbursement of bills.",
+   "whyNot": [
+    "The hospital is paid by health insurance. A71000 money goes to the client.",
+    "A reimbursement pays back exact bills. A71000 pays set amounts no matter the bill."
+   ],
+   "trick": "Indemnity = I get the money.",
+   "src": "Week 0 training 2.2 · Deep Dive A71000",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-levels",
+   "cat": "a71",
+   "q": "How many A71000 levels are there?",
+   "a": "5 ($100 to $500)",
+   "w": [
+    "3 ($100 to $300)",
+    "10 ($50 to $500)"
+   ],
+   "means": "There are five levels: $100, $200, $300, $400, $500. Every benefit scales with the level.",
+   "example": "Like five sizes of the same pizza. Bigger size, bigger slices everywhere.",
+   "why": "Training lists exactly five levels, $100 through $500.",
+   "whyNot": [
+    "Three is too few. The levels go all the way to $500.",
+    "There's no $50 level and no 10 levels."
+   ],
+   "trick": "One hand, five fingers, $100 each.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "kid-hs-1",
+   "cat": "kids",
+   "q": "Dad has $200,000 of life coverage, Mom has $60,000. Max Head Start on their child?",
+   "a": "$60,000",
+   "w": [
+    "$100,000",
+    "$25,000"
+   ],
+   "means": "Head Start max = the smaller of (half the higher parent) and (the lower parent's total). Never below $25,000.",
+   "example": "Two speed limits on one road: you follow the lower one.",
+   "why": "Half of Dad's $200k is $100k. Mom's total is $60k. The smaller is $60,000.",
+   "whyNot": [
+    "$100,000 is half of Dad's, but Mom's $60k is lower, so it caps the child.",
+    "$25,000 is the floor. It only kicks in when the math lands under $25k."
+   ],
+   "trick": "Half the high, all the low, take the low.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-hs-2",
+   "cat": "kids",
+   "q": "Dad has $80,000. Mom has no life insurance. Max Head Start on their child?",
+   "a": "$25,000",
+   "w": [
+    "$40,000",
+    "$0"
+   ],
+   "means": "Every child can get up to $25,000 of Head Start even if a parent has no coverage. That's the floor.",
+   "example": "Like a minimum wage: the math can say less, but nobody goes under the floor.",
+   "why": "Half of Dad's is $40k, Mom's is $0, smaller is $0, so the $25,000 floor applies.",
+   "whyNot": [
+    "$40,000 is half of Dad's, but Mom's $0 is lower.",
+    "$0 is the raw math, but the $25,000 floor beats it."
+   ],
+   "trick": "Under 25? Floor it to 25.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-hs-3",
+   "cat": "kids",
+   "q": "Mom has $150,000, Dad has $120,000. Max Head Start on their child?",
+   "a": "$75,000",
+   "w": [
+    "$120,000",
+    "$60,000"
+   ],
+   "means": "Take half of the HIGHER parent and compare it to the LOWER parent's full amount.",
+   "example": "Mom's the bigger plan here. Half of her $150k is $75k.",
+   "why": "Half of Mom's $150k is $75k. Dad's total is $120k. The smaller is $75,000.",
+   "whyNot": [
+    "$120,000 is Dad's full amount, but half of Mom's is smaller.",
+    "$60,000 is half of the LOWER parent. You halve the higher one, not the lower one."
+   ],
+   "trick": "Halve the high one, never the low one.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-hs-existing",
+   "cat": "kids",
+   "q": "A child's Head Start max works out to $40,000. The child already has $10,000 of active whole life. How much more can you add?",
+   "a": "$30,000",
+   "w": [
+    "$40,000",
+    "$50,000"
+   ],
+   "means": "The Head Start max includes any whole life already active on that child.",
+   "example": "A $40 gift card limit with $10 already spent: you have $30 left.",
+   "why": "$40,000 max minus the $10,000 already in force = $30,000.",
+   "whyNot": [
+    "$40,000 ignores the $10k already on the child. Existing whole life counts.",
+    "$50,000 adds them together. The max is a ceiling, not a starting point."
+   ],
+   "trick": "Max includes what's already there.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-ccq",
+   "cat": "kids",
+   "q": "Parents put $15,000 of Head Start on their son. Grandma wants to add $15,000 more. What does that trigger?",
+   "a": "Child Coverage Q'naire",
+   "w": [
+    "Nothing extra",
+    "A paramedical exam"
+   ],
+   "means": "Going over $25,000 of total Head Start on one child needs a Child Coverage Questionnaire. It counts everyone's purchases together.",
+   "example": "Like a weekly data cap shared by the whole family: it's the total that counts.",
+   "why": "$15k + $15k = $30k total, which is over $25k, so the questionnaire is required.",
+   "whyNot": [
+    "Each purchase is under $25k, but the rule is cumulative across parents and grandparents.",
+    "Training names the questionnaire, not an exam."
+   ],
+   "trick": "Over 25 total = questionnaire.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-cr-amt",
+   "cat": "kids",
+   "q": "How much coverage does the child rider give each child?",
+   "a": "$10,000",
+   "w": [
+    "$5,000",
+    "$25,000"
+   ],
+   "means": "The child rider adds $10,000 of term coverage on each eligible child, on the parent's policy.",
+   "example": "Ten grand per kid, like each kid getting the same size slice.",
+   "why": "Training: $10,000 of coverage on each eligible child.",
+   "whyNot": [
+    "$5,000 is too low for the AIL child rider.",
+    "$25,000 is the Head Start floor, a different product."
+   ],
+   "trick": "Rider = 10 per kid.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "kid-cr-prem",
+   "cat": "kids",
+   "q": "Family has 4 kids. How many child rider premiums do they pay?",
+   "a": "One for all of them",
+   "w": [
+    "One per child",
+    "Two (family max)"
+   ],
+   "means": "One child rider covers every eligible child in the household for one premium.",
+   "example": "Like a family Netflix plan: one price, the whole house watches.",
+   "why": "Training: one rider covers all eligible children for one premium, no matter how many.",
+   "whyNot": [
+    "Per-child pricing is Head Start, where each child gets their own policy.",
+    "There's no two-premium cap. It's one premium, period."
+   ],
+   "trick": "One rider, one price, all the kids.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-cr-conv",
+   "cat": "kids",
+   "q": "The child rider lets a child convert to permanent coverage with no medical questions, up to how much?",
+   "a": "$50,000",
+   "w": [
+    "$25,000",
+    "$100,000"
+   ],
+   "means": "The child can convert up to five times the rider amount without proving insurability.",
+   "example": "5 x $10,000 = $50,000.",
+   "why": "Training: up to five times the rider amount, which is $50,000.",
+   "whyNot": [
+    "$25,000 is the Head Start floor, not the conversion amount.",
+    "$100,000 would be 10 times. The rule is 5 times."
+   ],
+   "trick": "Rider 10, times 5 hands = 50.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-cr-start",
+   "cat": "kids",
+   "q": "How young can a child be covered by the child rider?",
+   "a": "15 days old",
+   "w": [
+    "At birth",
+    "6 months old"
+   ],
+   "means": "Child rider coverage starts at 15 days old.",
+   "example": "About two weeks after the baby comes home from the hospital.",
+   "why": "Training: covers children from 15 days old.",
+   "whyNot": [
+    "Not at birth. There's a 15-day wait.",
+    "6 months is too long. It's 15 days."
+   ],
+   "trick": "Fifteen days: two weeks and a day.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "kid-cash",
+   "cat": "kids",
+   "q": "Which kids' coverage builds cash value?",
+   "a": "Head Start",
+   "w": [
+    "Child rider",
+    "Both of them"
+   ],
+   "means": "Head Start is whole life on the child, so it builds cash value. The child rider is term: pure protection.",
+   "example": "Head Start is buying the car. The child rider is renting it.",
+   "why": "Training: the child rider has no cash value. Head Start is the child's own permanent policy.",
+   "whyNot": [
+    "The child rider is term coverage with no cash value.",
+    "Only Head Start builds cash value."
+   ],
+   "trick": "Head Start = whole life = cash. Rider = rental.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-cr-lapse",
+   "cat": "kids",
+   "q": "Mom's policy with the child rider lapses. What happens to the kids' rider coverage?",
+   "a": "It ends too",
+   "w": [
+    "It keeps going",
+    "Converts on its own"
+   ],
+   "means": "The child rider is tied to the parent's policy. If the parent's policy lapses or is cancelled, the rider ends.",
+   "example": "Like a phone case: lose the phone, the case doesn't make calls.",
+   "why": "Training: ends if the parent's policy lapses or is cancelled.",
+   "whyNot": [
+    "It can't survive on its own. It's attached to the parent's policy.",
+    "Conversion is an option the family uses, not something automatic."
+   ],
+   "trick": "No parent policy, no rider.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-hs-age",
+   "cat": "kids",
+   "q": "Children placed into Head Start whole life must be under what age?",
+   "a": "18",
+   "w": [
+    "21",
+    "16"
+   ],
+   "means": "Children under 18 are enrolled in whole life through the Head Start program.",
+   "example": "Same line as being a legal adult.",
+   "why": "Training: when enrolling children under 18, they go into Head Start.",
+   "whyNot": [
+    "21 is the number that shows up in the child rider confusion. Head Start is under 18.",
+    "16 is driving age, not the Head Start cutoff."
+   ],
+   "trick": "Head Start ends where adulthood starts: 18.",
+   "src": "Week 0 training 2.1 · Whole Life Products",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "wl-brackets",
+   "cat": "wl",
+   "q": "Which one is NOT an AIL whole life rate bracket?",
+   "a": "Standard (ST)",
+   "w": [
+    "Preferred (PR)",
+    "Executive (EX)"
+   ],
+   "means": "AIL's whole life brackets are Regular (WL), Preferred (PR), Executive (EX) and Select Life (SL).",
+   "example": "Like coffee sizes with their own names. 'Standard' isn't on this menu.",
+   "why": "Standard (ST) isn't one of the four. The four are WL, PR, EX, SL.",
+   "whyNot": [
+    "Preferred (PR) is a real bracket.",
+    "Executive (EX) is a real bracket."
+   ],
+   "trick": "We Pray Every Sunday: WL, PR, EX, SL.",
+   "src": "Week 0 training 2.1 · Whole Life Products",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "wl-rate",
+   "cat": "wl",
+   "q": "Client steps up to a bigger whole life amount. What happens to the cost per dollar of coverage?",
+   "a": "It gets better",
+   "w": [
+    "It stays the same",
+    "It gets worse"
+   ],
+   "means": "More coverage moves the client into a better rate bracket, so each dollar of coverage costs less.",
+   "example": "Like a Costco pack: the bigger pack costs more total but less per item.",
+   "why": "Training: the more coverage, the better the rate per dollar.",
+   "whyNot": [
+    "Most clients expect that, but brackets make bigger amounts cheaper per dollar.",
+    "That's the opposite of how AIL brackets work."
+   ],
+   "trick": "Bigger pack, better price per piece.",
+   "src": "Week 0 training 2.1 · Whole Life Products",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-senior-cap",
+   "cat": "wl",
+   "q": "What's the total whole life coverage cap for senior clients?",
+   "a": "$35,000",
+   "w": [
+    "$50,000",
+    "$25,000"
+   ],
+   "means": "Senior clients have a total coverage cap of $35,000.",
+   "example": "Like a $35k ceiling. You can't stack past it.",
+   "why": "Training lists the senior cap as $35,000 total.",
+   "whyNot": [
+    "$50,000 is the child rider conversion amount.",
+    "$25,000 is the Head Start floor."
+   ],
+   "trick": "Seniors: 3-5, thirty-five.",
+   "src": "Week 0 training 2.1 · Senior Coverage",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "wl-graded-2",
+   "cat": "wl",
+   "q": "Graded Benefit Whole Life, $20,000 face. The client dies in year 2. What does it pay?",
+   "a": "$10,000",
+   "w": [
+    "$5,000",
+    "$20,000"
+   ],
+   "means": "Graded benefit pays 25% of the face in year 1, 50% in year 2, 75% in year 3, and 100% after that.",
+   "example": "Like a new phone that unlocks features over time.",
+   "why": "Year 2 = 50%. Half of $20,000 is $10,000.",
+   "whyNot": [
+    "$5,000 is 25%, the year 1 amount.",
+    "$20,000 is the full face. That's only after year 3."
+   ],
+   "trick": "25, 50, 75, 100. Count up a quarter a year.",
+   "src": "Week 0 training 2.1 · Senior Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-graded-3",
+   "cat": "wl",
+   "q": "Graded Benefit Whole Life, $15,000 face. Death in year 3. Payout?",
+   "a": "$11,250",
+   "w": [
+    "$7,500",
+    "$15,000"
+   ],
+   "means": "Year 3 of a graded benefit policy pays 75% of the face.",
+   "example": "Three quarters of a pizza is 75%.",
+   "why": "75% of $15,000 = $11,250.",
+   "whyNot": [
+    "$7,500 is 50%, the year 2 amount.",
+    "$15,000 is 100%, which starts after year 3."
+   ],
+   "trick": "Year 3 = three quarters.",
+   "src": "Week 0 training 2.1 · Senior Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-graded-why",
+   "cat": "wl",
+   "q": "What does a senior get in exchange for the graded payout schedule?",
+   "a": "Easier underwriting",
+   "w": [
+    "A lower premium",
+    "Faster cash value"
+   ],
+   "means": "Graded benefit has more lenient underwriting. In exchange, the full death benefit phases in over the first years.",
+   "example": "Like a car loan with easy approval but a waiting period on some perks.",
+   "why": "Training: more lenient underwriting is the defining feature; the graded schedule is the trade-off.",
+   "whyNot": [
+    "The training never says it's cheaper. The trade is about qualifying.",
+    "Nothing in the training ties graded benefit to faster cash value."
+   ],
+   "trick": "Graded = Gets in easier.",
+   "src": "Week 0 training 2.1 · Senior Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-lpu-ends",
+   "cat": "wl",
+   "q": "With LPU65, what stops at age 65?",
+   "a": "The payments",
+   "w": [
+    "The coverage",
+    "The cash value"
+   ],
+   "means": "LPU65 is limited-pay whole life: you pay until 65, and you're covered for life.",
+   "example": "Like paying off a car loan: the payments end, you still own the car.",
+   "why": "Payments end at 65. Coverage keeps going for life.",
+   "whyNot": [
+    "Coverage doesn't end. That's term to 65, a different product.",
+    "Cash value stays in the policy. It doesn't stop at 65."
+   ],
+   "trick": "65 and done paying, never done covered.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-lpu-cost",
+   "cat": "wl",
+   "q": "LPU65 vs regular whole life, same face amount, same client. Which costs more per month?",
+   "a": "LPU65",
+   "w": [
+    "Regular whole life",
+    "They're the same"
+   ],
+   "means": "LPU65 squeezes the payments into fewer years, so the monthly premium is higher. Cash value builds faster.",
+   "example": "Paying a car off in 3 years costs more a month than in 6, but you're done sooner.",
+   "why": "Fewer years of payments means a higher monthly payment.",
+   "whyNot": [
+    "Regular whole life spreads payments over a lifetime, so the monthly is lower.",
+    "Same face, fewer payment years, so it can't be the same."
+   ],
+   "trick": "Pay faster, pay more a month.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-foc",
+   "cat": "wl",
+   "q": "Which plan is final-expense whole life where the benefit can be assigned to a funeral home?",
+   "a": "Freedom of Choice",
+   "w": [
+    "Graded Benefit WL",
+    "Head Start"
+   ],
+   "means": "Freedom of Choice is final-expense whole life with a funeral-home assignment option.",
+   "example": "Like prepaying your favorite restaurant so the bill's covered when the family shows up.",
+   "why": "Per Niko's notes, Freedom of Choice pairs whole life with a funeral-home assignment.",
+   "whyNot": [
+    "Graded Benefit is the lenient-underwriting senior plan. It's about qualifying, not funeral assignment.",
+    "Head Start is whole life on a child."
+   ],
+   "trick": "Freedom of Choice: choose your funeral home.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "term-dec",
+   "cat": "term",
+   "q": "Which AIL term option has a coverage amount that shrinks over the years?",
+   "a": "Decreasing term",
+   "w": [
+    "20-year term",
+    "Term to 65"
+   ],
+   "means": "Decreasing term lowers the coverage over time, like a mortgage balance going down.",
+   "example": "Like a car loan: the balance shrinks every year, so does the coverage.",
+   "why": "Training: decreasing term is used for mortgage protection because the debt also decreases.",
+   "whyNot": [
+    "20-year term keeps the same coverage for 20 years.",
+    "Term to 65 keeps coverage until 65."
+   ],
+   "trick": "Decreasing = Debt shrinking.",
+   "src": "Week 0 training 2.1 · Term Life Products",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "term-renew",
+   "cat": "term",
+   "q": "On AIL's 10-year term, what does 'renewable' mean?",
+   "a": "Extend, no new exam",
+   "w": [
+    "Switch to whole life",
+    "Price never changes"
+   ],
+   "means": "Renewable means the client can extend coverage at the end of the term without a new medical exam.",
+   "example": "Like renewing your lease without a new credit check.",
+   "why": "Training: renewable = extend coverage at the end of the term without a new medical exam.",
+   "whyNot": [
+    "Switching to whole life is 'convertible', the other half of R&C.",
+    "Renewable doesn't promise the price stays the same."
+   ],
+   "trick": "Renew = Re-up. Convert = Change.",
+   "src": "Week 0 training 2.1 · Term Life Products",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "term-convert",
+   "cat": "term",
+   "q": "On AIL's term, what does 'convertible' mean?",
+   "a": "Change to permanent",
+   "w": [
+    "Extend the term",
+    "Lower the payment"
+   ],
+   "means": "Convertible means the client can turn the term policy into permanent coverage like whole life, without new medical underwriting.",
+   "example": "Like turning a car lease into a purchase without a new credit check.",
+   "why": "Training: convert into a permanent policy without new medical underwriting.",
+   "whyNot": [
+    "Extending the term is 'renewable'.",
+    "Converting to whole life usually costs more, not less."
+   ],
+   "trick": "Convert = Change the type.",
+   "src": "Week 0 training 2.1 · Term Life Products",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "term-rc",
+   "cat": "term",
+   "q": "Which AIL term options does training call renewable AND convertible?",
+   "a": "4-year and 10-year",
+   "w": [
+    "20-year and to 65",
+    "Decreasing only"
+   ],
+   "means": "Training names the 4-year and 10-year term options as renewable and convertible.",
+   "example": "The short leases come with the easy re-up.",
+   "why": "Training: for both the 4-year and 10-year term options, renewable and convertible is its own selling point.",
+   "whyNot": [
+    "Training doesn't describe 20-year or term to 65 as R&C.",
+    "Decreasing term is the mortgage-style one."
+   ],
+   "trick": "Short terms, R&C: 4 and 10.",
+   "src": "Week 0 training 2.1 · Term Life Products",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "term-fit-mortgage",
+   "cat": "fit",
+   "q": "Client, 40, wants level coverage for exactly the 20 years left on her mortgage. Best fit?",
+   "a": "20-year term",
+   "w": [
+    "Decreasing term",
+    "Term to 65"
+   ],
+   "means": "20-year term gives level coverage for a 20-year window, commonly matched to a mortgage.",
+   "example": "Like a 20-year phone contract that matches the 20-year loan.",
+   "why": "She asked for LEVEL coverage for exactly 20 years. That's 20-year term.",
+   "whyNot": [
+    "Decreasing term also fits mortgages, but the coverage shrinks. She wants level.",
+    "Term to 65 at age 40 runs 25 years, longer than she needs."
+   ],
+   "trick": "Match the term to the timeline.",
+   "src": "Week 0 training 2.1 · Term Life Products",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "term-cash",
+   "cat": "term",
+   "q": "Client asks: 'Does term build cash value like whole life?'",
+   "a": "No, term has none",
+   "w": [
+    "Yes, after 10 years",
+    "Only when renewed"
+   ],
+   "means": "Term is temporary, pure protection. Whole life is permanent and builds cash value.",
+   "example": "Renting an apartment: you're protected while you pay, but you don't build equity.",
+   "why": "Training: term offers neither permanence nor cash value.",
+   "whyNot": [
+    "There's no cash value at year 10. That's a made-up feature.",
+    "Renewing extends the term. It doesn't add cash value."
+   ],
+   "trick": "Term = rent. Whole life = own.",
+   "src": "Week 0 training 2.1 · Whole Life Products",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "adb-age",
+   "cat": "adb",
+   "q": "At AIL, the ADB rider ends at what age?",
+   "a": "70",
+   "w": [
+    "65",
+    "80"
+   ],
+   "means": "The ADB rider ends at 70 at AIL. The base policy keeps going.",
+   "example": "Like a phone warranty that ends while you keep the phone.",
+   "why": "Training: in our company that age is 70 years old.",
+   "whyNot": [
+    "65 is LPU65's payment age, not when ADB ends.",
+    "80 is too old. ADB stops at 70."
+   ],
+   "trick": "ADB checks out at 70.",
+   "src": "Week 0 training 2.1 · Deep Dive Accidental Death Benefits",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "adb-pays",
+   "cat": "adb",
+   "q": "Which death would the ADB rider pay on?",
+   "a": "Rear-ended at a light",
+   "w": [
+    "Drug overdose",
+    "Heart attack at gym"
+   ],
+   "means": "ADB pays only when the death comes directly from a covered accident.",
+   "example": "A crash you didn't cause is an accident. Illness and overdoses aren't covered.",
+   "why": "A car crash is a covered accident.",
+   "whyNot": [
+    "Drug overdose is a listed exclusion.",
+    "A heart attack is illness, not an accident, even if it happens at the gym."
+   ],
+   "trick": "Accident only. No illness, no overdose.",
+   "src": "Week 0 training 2.1 · Deep Dive Accidental Death Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "adb-math",
+   "cat": "adb",
+   "q": "Client has $50,000 whole life + $50,000 ADB. He dies of cancer. What's paid?",
+   "a": "$50,000",
+   "w": [
+    "$100,000",
+    "$0"
+   ],
+   "means": "ADB pays extra only for accidental death. A cancer death pays the base policy only.",
+   "example": "The base is your main meal; ADB is the dessert that only comes with an accident.",
+   "why": "Cancer is illness, so only the $50,000 base pays.",
+   "whyNot": [
+    "$100,000 would be an accidental death (base + ADB).",
+    "The base whole life still pays. ADB just doesn't add anything."
+   ],
+   "trick": "Illness = base. Accident = base + ADB.",
+   "src": "Week 0 training 2.1 · Deep Dive Accidental Death Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "adb-window",
+   "cat": "adb",
+   "q": "For ADB to pay, the death usually has to happen within how long of the accident?",
+   "a": "90 to 365 days",
+   "w": [
+    "30 days",
+    "2 years"
+   ],
+   "means": "The death usually has to happen within a set time after the accident, commonly 90 to 365 days.",
+   "example": "Like a return window on a purchase: it has to happen inside the window.",
+   "why": "Training: commonly 90 to 365 days, depending on the policy.",
+   "whyNot": [
+    "30 days is too short.",
+    "2 years is the contestability period, a different rule."
+   ],
+   "trick": "ADB window: one season to one year.",
+   "src": "Week 0 training 2.1 · Deep Dive Accidental Death Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "adb-cash",
+   "cat": "adb",
+   "q": "Does the ADB rider build cash value?",
+   "a": "No, pure protection",
+   "w": [
+    "Yes, like whole life",
+    "After age 70"
+   ],
+   "means": "ADB has no cash value. It's pure protection on top of the base.",
+   "example": "Like a phone insurance add-on: no money back if you never use it.",
+   "why": "Training: no cash value, it's pure protection.",
+   "whyNot": [
+    "The base whole life builds cash value. The ADB rider doesn't.",
+    "At 70 the ADB rider ends. Nothing builds."
+   ],
+   "trick": "ADB = protection only, no piggy bank.",
+   "src": "Week 0 training 2.1 · Deep Dive Accidental Death Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "rid-ti",
+   "cat": "riders",
+   "q": "Terminal Illness Accelerated Death Benefit rider. What's the deal in New Jersey?",
+   "a": "Not available in NJ",
+   "w": [
+    "Pays half the face",
+    "Pays the full face"
+   ],
+   "means": "The Terminal Illness rider pays 1/2 the face early when a doctor certifies 12 months or less to live, but it's not offered in NJ.",
+   "example": "Like a menu item the restaurant doesn't serve in this state.",
+   "why": "Training: this rider is not available in NJ.",
+   "whyNot": [
+    "Half the face is how it works in states that have it. NJ doesn't.",
+    "It never pays the full face early, and NJ doesn't offer it anyway."
+   ],
+   "trick": "NJ? TI says bye.",
+   "src": "Week 0 training 2.1 · Riders and Add-Ons",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "rid-gio",
+   "cat": "riders",
+   "q": "Healthy 26-year-old worried he'll want more coverage later. Which rider protects that?",
+   "a": "GIO",
+   "w": [
+    "Spousal rider",
+    "Child rider"
+   ],
+   "means": "Guaranteed Insurability Option lets him buy more coverage later at set points with no new medical underwriting.",
+   "example": "Like reserving a parking spot: it's yours later even if the lot fills up.",
+   "why": "GIO protects his future ability to add coverage, whatever happens to his health.",
+   "whyNot": [
+    "Spousal covers a spouse, not his own future increases.",
+    "Child rider covers kids."
+   ],
+   "trick": "GIO = Get It Over-and-over, no exam.",
+   "src": "Week 0 training 2.1 · Riders and Add-Ons",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "rid-spouse",
+   "cat": "riders",
+   "q": "Client's plan should cover his wife without a separate policy on her. Which rider?",
+   "a": "Spousal rider",
+   "w": [
+    "GIO",
+    "Head Start"
+   ],
+   "means": "The Spousal Rider extends coverage to the spouse under the primary policyholder's plan.",
+   "example": "Like adding your partner to your car insurance.",
+   "why": "Training: the Spousal Rider covers a spouse under the policyholder's plan.",
+   "whyNot": [
+    "GIO protects his own future increases.",
+    "Head Start is whole life on a child."
+   ],
+   "trick": "Spouse = Spousal. Easy one, don't overthink.",
+   "src": "Week 0 training 2.1 · Riders and Add-Ons",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "rid-ti-rule",
+   "cat": "riders",
+   "q": "In states where the Terminal Illness rider exists, how long must a doctor say the insured has left?",
+   "a": "12 months or less",
+   "w": [
+    "24 months or less",
+    "6 months or less"
+   ],
+   "means": "The TI rider triggers when a physician certifies 12 months or less to live (24 in IL, MA, WA). Not sold in NJ.",
+   "example": "One year on the calendar.",
+   "why": "Training: 12 months or less, 24 months in IL, MA and WA.",
+   "whyNot": [
+    "24 months is only in Illinois, Massachusetts and Washington.",
+    "6 months is hospice-style language, not this rider."
+   ],
+   "trick": "TI = one year (two in IL, MA, WA). Never NJ.",
+   "src": "Week 0 training 2.1 · Riders and Add-Ons",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "can-c20",
+   "cat": "cancer",
+   "q": "Which is NOT one of the C20 lump sum choices?",
+   "a": "$25,000",
+   "w": [
+    "$20,000",
+    "$50,000"
+   ],
+   "means": "The C20 pays one lump sum at $10,000, $20,000 or $50,000.",
+   "example": "Three sizes: small, medium, large. No $25k size.",
+   "why": "$25,000 isn't on the list. It's the wrong answer on the official 2.2 review quiz.",
+   "whyNot": [
+    "$20,000 is a real C20 choice.",
+    "$50,000 is a real C20 choice."
+   ],
+   "trick": "C20: 10, 20, 50.",
+   "src": "Week 0 training 2.2 · Cancer Plans",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "can-c20-after",
+   "cat": "cancer",
+   "q": "A client's C20 pays out. A year later the cancer comes back. What does the C20 do?",
+   "a": "Nothing, plan ended",
+   "w": [
+    "Pays again",
+    "Covers treatments"
+   ],
+   "means": "The C20 pays one lump sum on a first-time diagnosis, then the plan ends.",
+   "example": "A one-time bonus check: once it's cashed, it's done.",
+   "why": "Training: once the C20 pays out, the plan ends. No recurrence payout.",
+   "whyNot": [
+    "Paying again on recurrence is the C10's strength.",
+    "Treatment coverage (up to 500 visits) is the C10 with a detection rider."
+   ],
+   "trick": "C20 = one and done.",
+   "src": "Week 0 training 2.2 · Cancer Plans",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "can-recur",
+   "cat": "cancer",
+   "q": "Which plan keeps paying if cancer goes into remission and comes back?",
+   "a": "C10",
+   "w": [
+    "C20",
+    "A71000"
+   ],
+   "means": "The C10 is unit-based and continues to pay even if cancer returns.",
+   "example": "Like a season pass vs a single ticket. C10 is the season pass.",
+   "why": "Training: the C10 will continue to pay even if cancer comes back.",
+   "whyNot": [
+    "The C20 ends after its one lump sum.",
+    "The A71000 is accident-only. It doesn't pay for cancer."
+   ],
+   "trick": "C10 = the whole fight.",
+   "src": "Week 0 training 2.2 · Cancer Plans",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "can-detect",
+   "cat": "cancer",
+   "q": "The detection rider attaches to which plan?",
+   "a": "C10",
+   "w": [
+    "C20",
+    "A71000"
+   ],
+   "means": "The C10 can have a detection rider. With it, it also covers treatments, up to 500 visits.",
+   "example": "Like an add-on that only fits one phone model.",
+   "why": "Training: the C10 can have a detection rider attached.",
+   "whyNot": [
+    "The C20 has no detection rider structure.",
+    "The A71000 is an accident plan."
+   ],
+   "trick": "Detection goes with C10.",
+   "src": "Week 0 training 2.2 · Cancer Plans",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "can-500",
+   "cat": "cancer",
+   "q": "C10 with a detection rider covers treatments like chemo and radiation up to how many visits?",
+   "a": "500 visits",
+   "w": [
+    "50 visits",
+    "365 visits"
+   ],
+   "means": "With a detection rider the C10 covers treatment visits, up to 500.",
+   "example": "500 visits is years of treatment, which is why C10 is built for the long fight.",
+   "why": "Training: up to 500 visits for cobalt, radiation and chemotherapy.",
+   "whyNot": [
+    "50 is way too low.",
+    "365 is the A71000 hospital day limit."
+   ],
+   "trick": "Five hundred for the long fight.",
+   "src": "Week 0 training 2.2 · Cancer Plans",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "can-license",
+   "cat": "cancer",
+   "q": "What license does Niko need to present and enroll a cancer plan?",
+   "a": "Health producer",
+   "w": [
+    "Life only",
+    "No license"
+   ],
+   "means": "Cancer plans are health coverage, so a health producer license is required.",
+   "example": "Like needing a motorcycle license, not just a car license, to ride a bike.",
+   "why": "The 2.2 review flags 'agents don't need a Health license' as false.",
+   "whyNot": [
+    "A life-only license covers life products, not cancer plans.",
+    "You always need a license to sell insurance."
+   ],
+   "trick": "Cancer = health = health license.",
+   "src": "Week 0 training 2.2 · Review questions",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nc-free",
+   "cat": "nocost",
+   "q": "Best way to introduce the no-cost benefits?",
+   "a": "Your group provided these",
+   "w": [
+    "Free stuff for you",
+    "Gifts from me"
+   ],
+   "means": "Always call them no-cost or pre-paid, never free. They were paid for through the member's group.",
+   "example": "'Free' at a mall kiosk makes you walk faster. 'Already paid for' makes you stop.",
+   "why": "Training: 'These are no-cost benefits your group has provided for you.'",
+   "whyNot": [
+    "'Free' puts clients on guard and sounds worthless.",
+    "They come from the group, not from Niko personally."
+   ],
+   "trick": "Never free. Pre-paid.",
+   "src": "Week 0 training 2.1 · No-Cost Benefits We Provide",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nc-adnd",
+   "cat": "nocost",
+   "q": "The no-cost AD&D certificate pays how much?",
+   "a": "$2,000 to $4,000",
+   "w": [
+    "$10,000 to $50,000",
+    "$25,000 flat"
+   ],
+   "means": "The AD&D certificate pays $2,000 to $4,000 depending on the member's group, for a covered accidental death or dismemberment.",
+   "example": "Enough for a used car down payment, not a funeral. That gap opens the real conversation.",
+   "why": "Training: pays $2,000 to $4,000, depending on the group.",
+   "whyNot": [
+    "$10,000 to $50,000 is the B2000 base inside the paid A71000.",
+    "$25,000 is the Head Start floor."
+   ],
+   "trick": "Free-ish AD&D: 2 to 4 grand.",
+   "src": "Week 0 training 2.1 · No-Cost Benefits We Provide",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nc-plus",
+   "cat": "nocost",
+   "q": "What is AIL Plus?",
+   "a": "Discount program",
+   "w": [
+    "Health insurance",
+    "Dental insurance"
+   ],
+   "means": "AIL Plus is a healthcare discount program, not insurance. One year at no cost, discounts at participating providers, 24/7 doctor consults.",
+   "example": "Like a store loyalty card: you still pay, just less.",
+   "why": "Training: a healthcare discount program, not insurance.",
+   "whyNot": [
+    "It doesn't replace health coverage.",
+    "It's discounts, not a dental policy."
+   ],
+   "trick": "Plus = discounts, not coverage.",
+   "src": "Week 0 training 2.1 · No-Cost Benefits We Provide",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nc-guardian",
+   "cat": "nocost",
+   "q": "Which no-cost benefit lets parents name a guardian for their minor children?",
+   "a": "Will Kit",
+   "w": [
+    "Family Info Guide",
+    "Child Safe Kit"
+   ],
+   "means": "The Will Kit creates a basic will: who gets property, and a guardian for minor kids.",
+   "example": "Picking who drives your car if you can't.",
+   "why": "Training: lets parents name a guardian for their minor children.",
+   "whyNot": [
+    "The Family Information Guide organizes accounts, debts and contacts.",
+    "The Child Safe Kit stores ID info in case a child goes missing."
+   ],
+   "trick": "Will = who Will raise them.",
+   "src": "Week 0 training 2.1 · No-Cost Benefits We Provide",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nc-fig",
+   "cat": "nocost",
+   "q": "Which no-cost benefit best reveals that the client's only coverage is through work?",
+   "a": "Family Info Guide",
+   "w": [
+    "Will Kit",
+    "AD&D certificate"
+   ],
+   "means": "The Family Information Guide lists policies, accounts and debts, so you see coverage that could disappear with a job change.",
+   "example": "Like opening the glovebox and finding the insurance card has your boss's name on it.",
+   "why": "Training: the FIG shows what coverage they have and whether it's through work.",
+   "whyNot": [
+    "The Will Kit reveals minor kids and planning, not current coverage.",
+    "The AD&D shows who depends on them through the beneficiary."
+   ],
+   "trick": "FIG = Find It Guide.",
+   "src": "Week 0 training 2.1 · Maximizing the Value of No-Cost Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nj-freelook",
+   "cat": "nj",
+   "q": "New Jersey free look on a new life policy (not a replacement)?",
+   "a": "10 days",
+   "w": [
+    "30 days",
+    "3 days"
+   ],
+   "means": "The free look is the window to cancel a new policy for a full refund.",
+   "example": "Like a return window at a store.",
+   "why": "NJ: 10 days on a new policy.",
+   "whyNot": [
+    "30 days is the free look when the policy replaces an existing one.",
+    "3 days is a cooling-off period for other purchases, not NJ life."
+   ],
+   "trick": "New = 10. Replacement = 30.",
+   "src": "General NJ insurance rules (ExamFX level)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "nj-replace",
+   "cat": "nj",
+   "q": "NJ free look when the new life policy REPLACES an existing one?",
+   "a": "30 days",
+   "w": [
+    "10 days",
+    "20 days"
+   ],
+   "means": "Replacements get a longer free look so the client can be sure dropping the old policy is right.",
+   "example": "A bigger decision gets a longer return window.",
+   "why": "NJ: 30 days on a replacement.",
+   "whyNot": [
+    "10 days is for a normal new policy.",
+    "20 days isn't the NJ number."
+   ],
+   "trick": "Replace = bigger decision = 30.",
+   "src": "General NJ insurance rules (ExamFX level)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "nj-grace",
+   "cat": "nj",
+   "q": "Life policy grace period after a missed premium?",
+   "a": "31 days",
+   "w": [
+    "10 days",
+    "60 days"
+   ],
+   "means": "The grace period is how long the policy stays in force after a missed payment before it lapses.",
+   "example": "Like a phone bill that still works for a month after the due date.",
+   "why": "Standard life grace period: 31 days.",
+   "whyNot": [
+    "10 days is the NJ free look.",
+    "60 days is too long for a life policy grace period."
+   ],
+   "trick": "Grace = a month plus a day.",
+   "src": "General NJ insurance rules (ExamFX level)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "nj-contest",
+   "cat": "nj",
+   "q": "How long can the company contest a life claim over a misstatement on the application?",
+   "a": "2 years",
+   "w": [
+    "1 year",
+    "5 years"
+   ],
+   "means": "The contestability period is the window when the company can review the application after a death claim.",
+   "example": "Like a 2-year warranty, but for the application's honesty.",
+   "why": "Life policies: 2 years from issue.",
+   "whyNot": [
+    "1 year is too short.",
+    "5 years is too long."
+   ],
+   "trick": "Contest for 2, then it's through.",
+   "src": "General NJ insurance rules (ExamFX level)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "nj-ce",
+   "cat": "nj",
+   "q": "NJ continuing education for a life & health producer?",
+   "a": "24 hrs / 2 yrs, 3 ethics",
+   "w": [
+    "12 hrs a year, 1 ethics",
+    "30 hrs / 2 yrs, 0 ethics"
+   ],
+   "means": "NJ producers need continuing education every 2 years to keep the license.",
+   "example": "Like a gym membership that requires check-ins to stay active.",
+   "why": "NJ: 24 hours every 2 years, including 3 of ethics.",
+   "whyNot": [
+    "12 a year with 1 ethics shorts the ethics hours.",
+    "30 hours with no ethics isn't the NJ rule."
+   ],
+   "trick": "24 / 2 / 3.",
+   "src": "General NJ insurance rules (ExamFX level)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "m-weekly",
+   "cat": "money",
+   "q": "Client's plan is $17 a week. What is that per month?",
+   "a": "$73.67",
+   "w": [
+    "$68.00",
+    "$70.83"
+   ],
+   "means": "Weekly to monthly: multiply by 52, divide by 12.",
+   "example": "A month isn't 4 weeks. It's about 4.33 weeks.",
+   "why": "$17 x 52 = $884. $884 / 12 = $73.67.",
+   "whyNot": [
+    "$68 is $17 x 4. Months are longer than 4 weeks.",
+    "$70.83 is a math slip. Do 52 then divide by 12."
+   ],
+   "trick": "Weeks to months: times 52, over 12.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "m-alp",
+   "cat": "money",
+   "q": "Policy is $80 a month of life + $20 a month of A71000. What's the ALP?",
+   "a": "$960",
+   "w": [
+    "$1,200",
+    "$480"
+   ],
+   "means": "ALP is the monthly LIFE premium x 12. Per Niko's notes, the A71000 isn't counted.",
+   "example": "Your rent counts toward the lease, the parking spot doesn't.",
+   "why": "$80 x 12 = $960. The $20 A71000 is left out.",
+   "whyNot": [
+    "$1,200 counts the A71000 too.",
+    "$480 is only 6 months."
+   ],
+   "trick": "ALP = Life only, times 12.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": "Late Dec 2026 ALP becomes AP and A71 goes on every policy. Ask Nika how AP counts A71."
+  },
+  {
+   "id": "m-comm",
+   "cat": "money",
+   "q": "On a 50% contract, a sale has $1,200 ALP. About what's the commission?",
+   "a": "$600",
+   "w": [
+    "$1,200",
+    "$300"
+   ],
+   "means": "Commission is roughly ALP x your contract percentage.",
+   "example": "Half the pie on a 50% contract.",
+   "why": "$1,200 x 50% = $600. It's an advance, so a lapse can mean a chargeback.",
+   "whyNot": [
+    "$1,200 is the whole ALP, not your cut.",
+    "$300 would be a 25% contract."
+   ],
+   "trick": "ALP x 0.5 = your slice.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "m-hour",
+   "cat": "money",
+   "q": "To turn a $65/month premium into a weekly number, you divide by what?",
+   "a": "4.33",
+   "w": [
+    "4",
+    "12"
+   ],
+   "means": "There are about 4.33 weeks in a month (52 / 12).",
+   "example": "Rent split by weeks: $65 / 4.33 is about $15 a week.",
+   "why": "$65 / 4.33 = about $15.01 a week.",
+   "whyNot": [
+    "Dividing by 4 assumes 4-week months and overstates the weekly cost.",
+    "Dividing by 12 turns a yearly number into monthly."
+   ],
+   "trick": "52 / 12 = 4.33.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "m-child-alp",
+   "cat": "money",
+   "q": "Does the child rider premium count toward ALP?",
+   "a": "Yes, it counts",
+   "w": [
+    "No, riders don't",
+    "Only after a year"
+   ],
+   "means": "Per Niko's notes, ALP includes the child rider, while the A71000 is excluded.",
+   "example": "The child rider rides on the life policy, so it counts as life.",
+   "why": "Notes: A71 excluded, child rider included.",
+   "whyNot": [
+    "Some riders count. The child rider does.",
+    "No waiting period on counting it."
+   ],
+   "trick": "Kids count. A71 doesn't.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "fit-young",
+   "cat": "fit",
+   "q": "Client, 28, wants to be done paying by retirement but covered for life. Best fit?",
+   "a": "LPU65",
+   "w": [
+    "Term to 65",
+    "20-year term"
+   ],
+   "means": "LPU65 is whole life you pay off by 65, with coverage for life.",
+   "example": "Paying off the car before retirement and keeping it.",
+   "why": "Done paying at 65, covered for life. That's LPU65.",
+   "whyNot": [
+    "Term to 65 ends the coverage at 65.",
+    "20-year term ends at 48 for him."
+   ],
+   "trick": "Done paying, still covered: LPU65.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "fit-roofer",
+   "cat": "fit",
+   "q": "A roofer says, 'If I fall, I'm out of work for weeks.' Which plan speaks to that?",
+   "a": "A71000",
+   "w": [
+    "C20 cancer",
+    "GIO rider"
+   ],
+   "means": "The A71000 pays the client cash when they get hurt: ER, hospital days, ICU, plus recovery support.",
+   "example": "Getting hurt on the job and still paying rent.",
+   "why": "Training: a worker with physical or high-risk work, the A71000 'Get Hurt, Get Paid' speaks to their risk.",
+   "whyNot": [
+    "The C20 pays on a cancer diagnosis, not an injury.",
+    "GIO lets you buy more life insurance later."
+   ],
+   "trick": "Risky job = Get Hurt, Get Paid.",
+   "src": "Week 0 training 2.1 · Maximizing the Value of No-Cost Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "fit-senior",
+   "cat": "fit",
+   "q": "Client, 72, has some health issues and got turned down elsewhere. What's often the best fit?",
+   "a": "Graded Benefit WL",
+   "w": [
+    "LPU65",
+    "20-year term"
+   ],
+   "means": "Graded Benefit Whole Life has more lenient underwriting, built for seniors who may not qualify for standard.",
+   "example": "Like a starter credit card when your credit has dings.",
+   "why": "Training: Graded Benefit is often the best option for seniors with health issues.",
+   "whyNot": [
+    "LPU65 pays up at 65. She's already 72.",
+    "20-year term isn't built for a senior final-expense need."
+   ],
+   "trick": "Turned down, older? Graded.",
+   "src": "Week 0 training 2.1 · Senior Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "fit-baby",
+   "cat": "fit",
+   "q": "Young couple, new baby, a mortgage. Per training, what three things do you focus on?",
+   "a": "Income, house, Head Start",
+   "w": [
+    "Funeral, graded, C20",
+    "A71, AIL Plus, GIO"
+   ],
+   "means": "Training's example: income replacement, paying off the house, and starting the child early with Head Start.",
+   "example": "Protect the paycheck, the roof and the kid.",
+   "why": "Training example: young couple with a new baby and a mortgage.",
+   "whyNot": [
+    "Funeral and graded benefit fit seniors, not new parents.",
+    "Those are fine add-ons, but not the core focus training names."
+   ],
+   "trick": "Baby + mortgage: paycheck, roof, kid.",
+   "src": "Week 0 training 2.1 · Maximizing the Value of No-Cost Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "fit-recur",
+   "cat": "fit",
+   "q": "Client's mom fought cancer twice. She wants coverage that stays with her if it ever comes back. Best fit?",
+   "a": "C10",
+   "w": [
+    "C20",
+    "A71000"
+   ],
+   "means": "The C10 keeps paying through recurrence. The C20 pays once and ends.",
+   "example": "She needs the season pass, not the single ticket.",
+   "why": "Training: the C10 continues to pay if cancer returns.",
+   "whyNot": [
+    "The C20 ends after one payout.",
+    "The A71000 is accident-only."
+   ],
+   "trick": "Comes back? C10 comes back too.",
+   "src": "Week 0 training 2.2 · Cancer Plans",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-206020",
+   "cat": "peter",
+   "q": "Peter's 20/60/20 rule: which group makes you the money?",
+   "a": "The middle 60%",
+   "w": [
+    "The top 20%",
+    "The bottom 20%"
+   ],
+   "means": "Per Peter: 20% never buy, 60% need to be sold, 20% are lay-downs. The 60% is the paycheck.",
+   "example": "Gym sign-ups: the middle group shows up only if the trainer texts them.",
+   "why": "Peter: the money is in the 60%, won by mastering objections.",
+   "whyNot": [
+    "The lay-downs sell themselves, but they're only 20%.",
+    "The bottom 20% never buy, even if they say they want it."
+   ],
+   "trick": "Win the middle.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-followup",
+   "cat": "peter",
+   "q": "Per Peter's team, about how many scheduled follow-ups actually close?",
+   "a": "Less than 2%",
+   "w": [
+    "About 20%",
+    "About 50%"
+   ],
+   "means": "Peter's team found less than 2% of scheduled follow-ups close, so he goes for the no instead of fake appointments.",
+   "example": "Like 'let's grab lunch sometime': it almost never happens.",
+   "why": "Peter: less than 2%. His point is a hang-up beats a fake appointment.",
+   "whyNot": [
+    "20% is the 20/60/20 number.",
+    "Half is way too optimistic."
+   ],
+   "trick": "Follow-ups: under 2.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "pr-intro",
+   "cat": "peter",
+   "q": "Per Peter, about how many people you talk to should move from the intro into a presentation?",
+   "a": "1 out of 3",
+   "w": [
+    "1 out of 10",
+    "2 out of 3"
+   ],
+   "means": "Peter's intro scoreboard: about 1 in 3. If you're far below, the intro is the problem.",
+   "example": "Like a batting average around .333.",
+   "why": "Peter: about 1 out of 3 people should go from intro to presentation.",
+   "whyNot": [
+    "1 in 10 is the warning sign, not the target.",
+    "2 in 3 would be unusual."
+   ],
+   "trick": "Bat .333 on intros.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "pr-pyramid",
+   "cat": "peter",
+   "q": "Peter's tonality pyramid: what's the foundation at the bottom?",
+   "a": "Empathy",
+   "w": [
+    "Curiosity",
+    "Expert"
+   ],
+   "means": "Empathy is the base because it's an emotional product. Curiosity is next. Expert is the top.",
+   "example": "The foundation of a house goes in first.",
+   "why": "Peter: empathy is the bottom, then curiosity, then expert.",
+   "whyNot": [
+    "Curiosity is the middle: the first 30-60 seconds and objections.",
+    "Expert is the top: credibility, medical questions and the pitch."
+   ],
+   "trick": "Every Child Eats: Empathy, Curiosity, Expert (bottom up).",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-expert",
+   "cat": "peter",
+   "q": "Which tone does Peter use for credibility, the medical questions and the pitch?",
+   "a": "Expert tone",
+   "w": [
+    "Curiosity tone",
+    "Empathy tone"
+   ],
+   "means": "The expert tone is stern and confident, no question in your voice, no 'um'.",
+   "example": "A mechanic who Googles how to change your oil loses you.",
+   "why": "Peter: expert tone in credibility, medical questions and the pitch.",
+   "whyNot": [
+    "Curiosity is for the intro and objections.",
+    "Empathy is for discovery and hard news."
+   ],
+   "trick": "Pitch like a pilot.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-frame",
+   "cat": "peter",
+   "q": "Peter's objection framework: Acknowledge, ____, Dive deeper, Suggest.",
+   "a": "Isolate",
+   "w": [
+    "Pattern interrupt",
+    "Re-close"
+   ],
+   "means": "Isolate means narrowing it down: 'Is it more the price, or you're not sure you need it?'",
+   "example": "A doctor asks 'where does it hurt?' before treating.",
+   "why": "Peter: acknowledge, isolate, dive deeper, suggest and end with a question.",
+   "whyNot": [
+    "The pattern interrupt is Loop 2 for booking-call objections.",
+    "Re-closing comes after the suggestion."
+   ],
+   "trick": "A-I-D-S: Acknowledge, Isolate, Dive, Suggest.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-loop2",
+   "cat": "peter",
+   "q": "On a booking call, what's Peter's Loop 2 move?",
+   "a": "Pattern interrupt",
+   "w": [
+    "Pump fake",
+    "Acknowledge, move on"
+   ],
+   "means": "Loop 2: acknowledge, a pattern interrupt about something that doesn't matter, then your next question.",
+   "example": "'Oh my gosh, are the kids going crazy?' breaks the script in their head.",
+   "why": "Peter: Loop 1 acknowledge and move on, Loop 2 pattern interrupt, Loop 3 pump fake.",
+   "whyNot": [
+    "The pump fake is Loop 3.",
+    "Acknowledge and move on is Loop 1."
+   ],
+   "trick": "1 move on, 2 interrupt, 3 pump fake.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-spouse",
+   "cat": "peter",
+   "q": "Spouse objection. After 'Which option would she tell you to go with?', what's the key question?",
+   "a": "Why do you think that?",
+   "w": [
+    "Can she join now?",
+    "Want to call her?"
+   ],
+   "means": "'Why do you think that?' makes him explain the reasons, so he sells himself.",
+   "example": "When a friend says 'my wife would want the bigger TV', asking why gets him to argue for it.",
+   "why": "Peter: the hypothetical, then 'And why do you think that?'",
+   "whyNot": [
+    "Bringing her in can be fine, but it's not Peter's key question here.",
+    "That stalls the close instead of finishing it."
+   ],
+   "trick": "Hypothetical, then WHY.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-payday",
+   "cat": "peter",
+   "q": "'I can't pay for it today.' What's Peter's key question?",
+   "a": "What day you get paid?",
+   "w": [
+    "Can a friend pay?",
+    "Got another card?"
+   ],
+   "means": "Ask what day they typically get paid, then line the first payment up with that day.",
+   "example": "Like setting rent autopay for the day after payday.",
+   "why": "Peter: 'What day do you typically get paid?'",
+   "whyNot": [
+    "Someone else paying is its own objection with its own answer.",
+    "Hunting for another card pressures the client. Keep it clean."
+   ],
+   "trick": "Can't pay today? Ask payday.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-dials",
+   "cat": "peter",
+   "q": "Per Peter, at least how many times should you call every lead?",
+   "a": "3 times",
+   "w": [
+    "Once",
+    "10 times"
+   ],
+   "means": "Call every lead at least three times. People often pick up on the second or third dial.",
+   "example": "Like knocking: people answer on the second or third knock.",
+   "why": "Peter: dial every lead at least three times, double dial missed callbacks.",
+   "whyNot": [
+    "One dial leaves most of the pickups on the table.",
+    "10 is more than Peter's minimum, and it can feel like harassment."
+   ],
+   "trick": "Knock three times.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-activity",
+   "cat": "peter",
+   "q": "Per Peter's top producer playbook, what's constraint number one?",
+   "a": "Activity",
+   "w": [
+    "Objections",
+    "Product knowledge"
+   ],
+   "means": "'You don't have an objection problem, you have an activity problem.' Track dials, presentations, sales and talk time.",
+   "example": "Like a basketball player who wants a better shot but only takes 20 shots a week.",
+   "why": "Peter: activity is constraint number one.",
+   "whyNot": [
+    "Objections matter, but most agents who think that's the problem just haven't dialed enough.",
+    "Knowledge helps conviction, but activity comes first in his playbook."
+   ],
+   "trick": "Dials before skills.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-er100",
+   "cat": "a71",
+   "q": "$100 A71000 level. Client cuts his hand, gets stitches at urgent care. Payout?",
+   "a": "$50",
+   "w": [
+    "$100",
+    "$0"
+   ],
+   "means": "ER and outpatient care pay half the level per injury, and urgent care for an injury counts as outpatient care.",
+   "example": "Half of a $100 bill is $50.",
+   "why": "Half of $100 is $50.",
+   "whyNot": [
+    "$100 is the full level, which is one hospital day.",
+    "$0 would be right for sickness. A cut is an accident."
+   ],
+   "trick": "Outpatient = half.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-icu200",
+   "cat": "a71",
+   "q": "$200 level. 14 days in the ICU, then discharged. Total ICU benefit?",
+   "a": "$5,600",
+   "w": [
+    "$2,800",
+    "$8,400"
+   ],
+   "means": "The first 14 ICU days pay double the level.",
+   "example": "Double $200 is $400 a day, times 14 days.",
+   "why": "$400 x 14 = $5,600.",
+   "whyNot": [
+    "$2,800 is $200 x 14, the normal hospital rate. ICU doubles it.",
+    "$8,400 is triple. Nothing in the A71000 pays triple."
+   ],
+   "trick": "ICU first two weeks = double.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-vs-cert",
+   "cat": "a71",
+   "q": "What's the difference between the no-cost AD&D certificate and the A71000?",
+   "a": "Certificate: no-cost",
+   "w": [
+    "Both cost money",
+    "Both are no-cost"
+   ],
+   "means": "The AD&D certificate is a $2,000-$4,000 no-cost group benefit. The A71000 is a paid accident plan with hospital, ICU and ER cash plus the B2000.",
+   "example": "A free sample vs the product you buy.",
+   "why": "The certificate comes from the group at no cost. The A71000 has a premium.",
+   "whyNot": [
+    "The certificate has no premium.",
+    "The A71000 is a paid plan with levels $100 to $500."
+   ],
+   "trick": "Certificate = given. A71 = bought.",
+   "src": "Week 0 training 2.1 · No-Cost Benefits We Provide",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "a71-name",
+   "cat": "a71",
+   "q": "Training's nickname for the A71000?",
+   "a": "Get Hurt, Get Paid",
+   "w": [
+    "Freedom of Choice",
+    "Head Start"
+   ],
+   "means": "The A71000 is called the Get Hurt, Get Paid plan because it pays the client cash when an accident happens.",
+   "example": "Say it the way you'd say a slogan.",
+   "why": "Training: commonly known as the Get Hurt, Get Paid Plan.",
+   "whyNot": [
+    "Freedom of Choice is a final-expense whole life plan.",
+    "Head Start is whole life on a child."
+   ],
+   "trick": "A71 = Get Hurt, Get Paid.",
+   "src": "Week 0 training 2.2 · The A71000 Plan",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "kid-both",
+   "cat": "kids",
+   "q": "A parent wants permanent coverage on their daughter that is HER OWN policy. Which fits?",
+   "a": "Head Start",
+   "w": [
+    "Child rider",
+    "Spousal rider"
+   ],
+   "means": "Head Start is the child's own whole life policy. The child rider is term coverage attached to the parent's policy.",
+   "example": "Her own phone line, not a line on your plan.",
+   "why": "Training: unlike the child rider, Head Start is the child's own permanent policy.",
+   "whyNot": [
+    "The child rider is a rider on the parent's policy, not her own.",
+    "Spousal rider covers a spouse."
+   ],
+   "trick": "Own policy = Head Start.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "kid-cr-type",
+   "cat": "kids",
+   "q": "The child rider is what kind of coverage?",
+   "a": "Term, no cash value",
+   "w": [
+    "Whole life",
+    "Accident only"
+   ],
+   "means": "The child rider is term coverage: pure protection, no cash value.",
+   "example": "Renting, not owning.",
+   "why": "Training: considered a term coverage, pure protection with no cash value.",
+   "whyNot": [
+    "Whole life on a child is Head Start.",
+    "It pays on death from any cause, not just accidents."
+   ],
+   "trick": "Rider = rental.",
+   "src": "Week 0 training 2.1 · Children's Head Start + Deep Dive Children's Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-perm",
+   "cat": "wl",
+   "q": "Client asks: 'Does whole life ever expire if I keep paying?'",
+   "a": "No, it's permanent",
+   "w": [
+    "Yes, at 100",
+    "Yes, at 65"
+   ],
+   "means": "Whole life is permanent coverage. As long as premiums are paid, it stays in force.",
+   "example": "Like owning the house: no lease ending.",
+   "why": "Training: permanent coverage that does not expire.",
+   "whyNot": [
+    "Never quote an age that isn't on the policy. Say 'for life'.",
+    "65 is LPU65's last payment, not the end of coverage."
+   ],
+   "trick": "Whole life: say 'for life', never an age.",
+   "src": "Week 0 training 2.1 · Whole Life Products",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-graded-1",
+   "cat": "wl",
+   "q": "Graded Benefit Whole Life, $10,000 face. Death 8 months after issue. Payout?",
+   "a": "$2,500",
+   "w": [
+    "$5,000",
+    "$10,000"
+   ],
+   "means": "Year 1 of a graded benefit policy pays 25% of the face.",
+   "example": "A quarter of the pizza in year one.",
+   "why": "25% of $10,000 = $2,500.",
+   "whyNot": [
+    "$5,000 is 50%, the year 2 amount.",
+    "$10,000 is full face, after year 3."
+   ],
+   "trick": "Year 1 = a quarter.",
+   "src": "Week 0 training 2.1 · Senior Coverage",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "wl-foc-use",
+   "cat": "wl",
+   "q": "Freedom of Choice: what's the funeral-home assignment for?",
+   "a": "Pays the funeral home",
+   "w": [
+    "Picks the cemetery",
+    "Lowers the premium"
+   ],
+   "means": "The benefit can be assigned so the funeral home gets paid directly, so the family isn't fronting the bill.",
+   "example": "Like autopay straight to the restaurant instead of handing cash to your cousin to deliver.",
+   "why": "Per Niko's notes, the assignment sends money to the funeral home of the family's choice.",
+   "whyNot": [
+    "It doesn't choose the cemetery.",
+    "Assignment doesn't change the premium."
+   ],
+   "trick": "Freedom of Choice: choose who gets paid.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": "Confirm the starter and inflation amounts ($15k / $25-30k) with Nika."
+  },
+  {
+   "id": "term-4",
+   "cat": "term",
+   "q": "Shortest renewable and convertible term AIL training lists?",
+   "a": "4-year",
+   "w": [
+    "1-year",
+    "10-year"
+   ],
+   "means": "Training lists a 4-year renewable and convertible term.",
+   "example": "A short lease with an easy re-up.",
+   "why": "Training: 4-Year Renewable and Convertible Term.",
+   "whyNot": [
+    "No 1-year term is listed.",
+    "10-year is R&C too, but it isn't the shortest."
+   ],
+   "trick": "Four and ten are R&C.",
+   "src": "Week 0 training 2.1 · Term Life Products",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "term-outlive",
+   "cat": "term",
+   "q": "Honest line when a client asks what happens to term when it ends?",
+   "a": "Most outlive their term",
+   "w": [
+    "You get the money back",
+    "It auto-converts"
+   ],
+   "means": "Term is temporary. When it ends, coverage ends. Say the honest version: most people outlive their term.",
+   "example": "Renters don't get the rent back when they move out.",
+   "why": "Per Niko's do-say list: 'most people outlive their term'.",
+   "whyNot": [
+    "Term has no cash value, nothing comes back.",
+    "Conversion is a choice the client makes, not automatic."
+   ],
+   "trick": "Term: honest, not scary.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "adb-own",
+   "cat": "adb",
+   "q": "Can ADB be sold on its own at AIL?",
+   "a": "Yes, but usually add-on",
+   "w": [
+    "No, rider only",
+    "Only with A71000"
+   ],
+   "means": "ADB can be sold on its own, but it's commonly an add-on to a base life policy.",
+   "example": "Fries can be ordered alone, but they usually come with the burger.",
+   "why": "Training: while ADB can be sold on its own, it is commonly an add-on.",
+   "whyNot": [
+    "It isn't rider-only.",
+    "The A71000 has its own built-in B2000, a separate thing."
+   ],
+   "trick": "ADB: alone is allowed, add-on is normal.",
+   "src": "Week 0 training 2.1 · Deep Dive Accidental Death Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "adb-double",
+   "cat": "adb",
+   "q": "Why is ADB sometimes called 'double indemnity'?",
+   "a": "Can match the base",
+   "w": [
+    "It pays twice a year",
+    "Two people covered"
+   ],
+   "means": "The ADB can be set equal to the base face amount, so an accidental death pays double.",
+   "example": "A $50k base + $50k ADB = $100k if the death is accidental.",
+   "why": "Training: ADB can be added to equal the base face amount, so the beneficiary gets twice as much.",
+   "whyNot": [
+    "It pays once, on death.",
+    "It covers the insured, not two people."
+   ],
+   "trick": "Double = base + same again.",
+   "src": "Week 0 training 2.1 · Deep Dive Accidental Death Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nc-csk",
+   "cat": "nocost",
+   "q": "What does the Child Safe Kit app actually store?",
+   "a": "ID info for police",
+   "w": [
+    "A life policy",
+    "A savings account"
+   ],
+   "means": "Parents record a photo, description, fingerprints and medical details, ready for police if a child goes missing.",
+   "example": "A ready-to-go file on your phone for the worst day.",
+   "why": "Training: a no-cost app for parents to record their child's identifying information.",
+   "whyNot": [
+    "It isn't a policy.",
+    "It isn't money."
+   ],
+   "trick": "Child Safe = ID file.",
+   "src": "Week 0 training 2.1 · No-Cost Benefits We Provide",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nc-plus-year",
+   "cat": "nocost",
+   "q": "How long is the no-cost AIL Plus membership?",
+   "a": "One year",
+   "w": [
+    "Six months",
+    "For life"
+   ],
+   "means": "AIL Plus comes as a one-year membership at no cost to the member.",
+   "example": "A one-year pass.",
+   "why": "Training: one-year membership provided at no cost.",
+   "whyNot": [
+    "Not six months.",
+    "Not lifetime."
+   ],
+   "trick": "Plus = one year.",
+   "src": "Week 0 training 2.1 · No-Cost Benefits We Provide",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "nc-order",
+   "cat": "nocost",
+   "q": "Where do the no-cost benefits sit in the presentation?",
+   "a": "Before the sale",
+   "w": [
+    "After the close",
+    "Only if asked"
+   ],
+   "means": "They come early: they deliver value, build trust, produce referrals, and tell you what the family needs before you recommend anything.",
+   "example": "A doctor asks questions before writing the prescription.",
+   "why": "Training: rushing through the no-cost benefits to get to the sale loses trust, information and referrals.",
+   "whyNot": [
+    "After the close is too late to learn what they need.",
+    "They're a planned step, not optional."
+   ],
+   "trick": "Give first, then recommend.",
+   "src": "Week 0 training 2.1 · Maximizing the Value of No-Cost Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nj-trial",
+   "cat": "nj",
+   "q": "A 'trial app' at AIL means what?",
+   "a": "Underwrite first, no draft",
+   "w": [
+    "The free look",
+    "A 30-day test"
+   ],
+   "means": "A trial app goes to underwriting without drafting money; drafting starts once approved. It's for uncertain health. The free look is a separate NJ rule.",
+   "example": "Test-driving before you sign the loan.",
+   "why": "Per Niko's notes: sent to underwriting without drafting, draft once approved.",
+   "whyNot": [
+    "The free look is the 10-day cancel window after issue.",
+    "There's no 30-day test period."
+   ],
+   "trick": "Trial = try underwriting first.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "nj-am-best",
+   "cat": "nj",
+   "q": "AIL's A.M. Best rating, said correctly?",
+   "a": "A (Excellent)",
+   "w": [
+    "A+ (Superior)",
+    "AAA"
+   ],
+   "means": "AIL is rated A (Excellent) by A.M. Best. Saying A+ overstates it.",
+   "example": "Say the grade on the report card, not a better one.",
+   "why": "Niko's do-say list: A (Excellent) A.M. Best, not A+.",
+   "whyNot": [
+    "A+ is a different, higher rating AIL doesn't hold.",
+    "AAA is an S&P-style label, not A.M. Best's."
+   ],
+   "trick": "A, Excellent. One letter.",
+   "src": "Company facts in Niko's notes (AIL public pages)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "co-claims",
+   "cat": "nj",
+   "q": "How much did AIL pay in life claims last year, per the credibility line?",
+   "a": "Over $287 million",
+   "w": [
+    "Over $95 billion",
+    "Over $28 million"
+   ],
+   "means": "The honest credibility line: AIL paid over $287 million in life claims last year.",
+   "example": "Big number, say it fast and confident.",
+   "why": "Niko's notes: $287,140,775 in life claims in 2025.",
+   "whyNot": [
+    "$95 billion is the coverage in force, not claims paid.",
+    "$28 million is ten times too small."
+   ],
+   "trick": "287 million paid.",
+   "src": "Company facts in Niko's notes (AIL public pages)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "co-founded",
+   "cat": "nj",
+   "q": "AIL was founded in what year, and unions since when?",
+   "a": "1951, unions 1961",
+   "w": [
+    "1961, unions 1971",
+    "1941, unions 1951"
+   ],
+   "means": "AIL started in 1951 and has worked with unions since 1961.",
+   "example": "Ten years in, the union label came on.",
+   "why": "Niko's company notes: founded 1951, unions since 1961.",
+   "whyNot": [
+    "Off by ten years.",
+    "Off by ten years the other way."
+   ],
+   "trick": "51 born, 61 union.",
+   "src": "Company facts in Niko's notes (AIL public pages)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "m-weekly2",
+   "cat": "money",
+   "q": "$9.50 a week. Monthly?",
+   "a": "$41.17",
+   "w": [
+    "$38.00",
+    "$47.50"
+   ],
+   "means": "Weekly x 52 / 12.",
+   "example": "A month is 4.33 weeks, not 4.",
+   "why": "$9.50 x 52 = $494. $494 / 12 = $41.17.",
+   "whyNot": [
+    "$38 is x4, which shortchanges the month.",
+    "$47.50 is x5, too many weeks."
+   ],
+   "trick": "x52, /12.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "m-10k",
+   "cat": "money",
+   "q": "Niko wants about $10k in 3 months on a 50% contract. Roughly how many sales a week?",
+   "a": "1 to 2",
+   "w": [
+    "5 to 6",
+    "10+"
+   ],
+   "means": "At typical ALPs, 50% commission on 1-2 sales a week gets to about $10k over 3 months.",
+   "example": "Not a dial-a-thon, a steady one or two a week.",
+   "why": "Niko's own math: ~$10k in 3 months is about 1-2 sales a week.",
+   "whyNot": [
+    "5-6 a week would be far above the target.",
+    "10+ is a top-producer week, not the $10k math."
+   ],
+   "trick": "Ten grand = one or two a week.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "m-hour2",
+   "cat": "money",
+   "q": "Hour Power: a $130/month plan is about how much a week?",
+   "a": "$30",
+   "w": [
+    "$32.50",
+    "$26"
+   ],
+   "means": "Monthly / 4.33 gives the weekly cost.",
+   "example": "$130 split over 4.33 weeks.",
+   "why": "$130 / 4.33 = about $30.",
+   "whyNot": [
+    "$32.50 divides by 4.",
+    "$26 divides by 5."
+   ],
+   "trick": "Divide by 4.33.",
+   "src": "Niko's notes from Nika (project memory)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "fit-work",
+   "cat": "fit",
+   "q": "Client's only life coverage is through her job. What's the angle?",
+   "a": "It can vanish with the job",
+   "w": [
+    "She's fully set",
+    "Replace it now"
+   ],
+   "means": "Work coverage can disappear with a job change or layoff. Coverage she owns stays with her.",
+   "example": "A company phone goes back when you leave.",
+   "why": "Training: show how work coverage can disappear with a job change, and why coverage they own matters.",
+   "whyNot": [
+    "Work coverage alone usually isn't enough and isn't hers.",
+    "Never advise replacing. Add owned coverage alongside."
+   ],
+   "trick": "Work coverage = company phone.",
+   "src": "Week 0 training 2.1 · Maximizing the Value of No-Cost Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "fit-single",
+   "cat": "fit",
+   "q": "Single parent, worried about the kids. Per training, what's the focus?",
+   "a": "Kids' future + guardian",
+   "w": [
+    "Legacy for grandkids",
+    "A71000 only"
+   ],
+   "means": "Focus on guaranteed protection for the children's future, and naming a guardian through the Will Kit.",
+   "example": "Who raises them, and what pays for it.",
+   "why": "Training's example: guaranteed protection for the kids and a guardian via the Will Kit.",
+   "whyNot": [
+    "Grandkid legacy is the grandparent conversation.",
+    "A71 helps, but it's not the core of a single parent's need."
+   ],
+   "trick": "Single parent: protect + guardian.",
+   "src": "Week 0 training 2.1 · Maximizing the Value of No-Cost Benefits",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-angles",
+   "cat": "peter",
+   "q": "Peter's four angles of value: burial, leave money, cheaper plan, and ____?",
+   "a": "Out of a waiting period",
+   "w": [
+    "Build cash value",
+    "Cover the kids"
+   ],
+   "means": "Yes to any of the four means the client has a reason to buy today.",
+   "example": "Some people with graded policies want full coverage now, not in two years.",
+   "why": "Peter: cover burial, leave money, cheaper plan, get out of a waiting period.",
+   "whyNot": [
+    "Cash value isn't one of his four.",
+    "Kids aren't one of his four."
+   ],
+   "trick": "Burial, Money, Cheaper, Waiting.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "pr-facts",
+   "cat": "peter",
+   "q": "Peter's four facts about a current policy: company, coverage, monthly cost, and ____?",
+   "a": "Waiting period",
+   "w": [
+    "Agent's name",
+    "Cash value"
+   ],
+   "means": "Without all four you can't compare apples to apples.",
+   "example": "Like comparing phone plans: carrier, data, price, contract.",
+   "why": "Peter: who they're with, how much, what they pay, and whether there's a waiting period.",
+   "whyNot": [
+    "The agent's name doesn't change the comparison.",
+    "Cash value isn't one of his four."
+   ],
+   "trick": "Who, how much, how much a month, waiting?",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": true,
+   "verify": ""
+  },
+  {
+   "id": "pr-zombies",
+   "cat": "peter",
+   "q": "'Kill the zombies' means what?",
+   "a": "Handle objections early",
+   "w": [
+    "Hang up on time-wasters",
+    "Skip the medical"
+   ],
+   "means": "Handle objections before the numbers: 'If I find something comfortable and affordable, would anything hold you back from seeing if you qualify today?'",
+   "example": "Lock the doors before the zombies show up.",
+   "why": "Peter: handling objections before they come up, before the price.",
+   "whyNot": [
+    "It's not about hanging up.",
+    "Never skip medical questions."
+   ],
+   "trick": "Zombies = objections, kill early.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-pvp",
+   "cat": "peter",
+   "q": "Peter's pitch order?",
+   "a": "Package, value, price",
+   "w": [
+    "Price, package, value",
+    "Value, price, package"
+   ],
+   "means": "Package first, then the value in their words from discovery, then the price last.",
+   "example": "Show the car, talk about the road trips, then the payment.",
+   "why": "Peter: package, value, price, and 'if you can even get qualified'.",
+   "whyNot": [
+    "Price first makes it a price conversation.",
+    "Value before the package has nothing to attach to."
+   ],
+   "trick": "P-V-P.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-budget",
+   "cat": "peter",
+   "q": "Peter's budget check line?",
+   "a": "Food off the table?",
+   "w": [
+    "Can you swing it?",
+    "A dollar a day"
+   ],
+   "means": "'I always want to make sure I'm not taking any food off the table. Is that comfortable every single month?'",
+   "example": "A caring check, not a push.",
+   "why": "Peter: 'not taking any food off the table'.",
+   "whyNot": [
+    "'Can you swing it' sounds like pressure.",
+    "'A dollar a day' is a line Niko's sheet cut: not everyone can."
+   ],
+   "trick": "Food on the table.",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-shop",
+   "cat": "peter",
+   "q": "'I want to shop around.' Peter's first question after acknowledging?",
+   "a": "What matters most to you?",
+   "w": [
+    "Who else are you calling?",
+    "What's your budget?"
+   ],
+   "means": "Ask what they're mainly looking for: lowest price, most coverage, or no waiting period. Then 'how will you know which company is right?'",
+   "example": "Find out what they're shopping FOR.",
+   "why": "Peter: 'What are you mainly looking for: lowest price, most coverage, or no waiting period?'",
+   "whyNot": [
+    "Who else they're calling doesn't move the sale.",
+    "Budget is the next objection, not this one."
+   ],
+   "trick": "Shop around = what are you shopping for?",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  },
+  {
+   "id": "pr-writing",
+   "cat": "peter",
+   "q": "'I want to see it in writing.' Peter's first question?",
+   "a": "What specifically?",
+   "w": [
+    "I'll mail it, bye",
+    "Why don't you trust me?"
+   ],
+   "means": "'What specifically do you want to see in writing that'll help you decide?' then 'anything else?' to find a hidden objection.",
+   "example": "Narrow it to the one thing they really want to see.",
+   "why": "Peter: ask what specifically, then 'is there anything else?'",
+   "whyNot": [
+    "Mailing it ends the call with nothing.",
+    "Challenging trust kills rapport."
+   ],
+   "trick": "Writing = what specifically?",
+   "src": "Peter Roberts video (his style and stats, not AIL policy)",
+   "mem": false,
+   "verify": ""
+  }
+ ]
+}
